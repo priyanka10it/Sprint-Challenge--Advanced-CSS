@@ -34,13 +34,34 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Ans. Adaptive Website							                   |Responsive Website
+    1.Layout widths are still hardcoded at each media query        | 1.Responsive units are used throughout the site.
+    2.Quick deployment for specific devices				           |2.Site accommodates thousands of devices and takes longer to build.
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Ans.Mobile first implies to design and code for a mobile device first, and expand layout or features as you gain more screen space      toward desktop.
+    For CSS implementations mobile first usually refers the general styles are pointed at the phone and utilize min-width media queries to layer on more complexity as grow toward  desktop views.Mobile first means media query is used from min to max.
+    Desktop first implies to design and code for desktop device first, and shrink layout or features as you gain less screen space for mobile device. Desktop first means, media query is used from max to min.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Ans.62.5% in html,as the base value, then convert rem units by the power of 10 instead of 16. 62.5 * .16 = 10. That means 1rem would   equate to 10px.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Ans.Preprocessing is simply a more robust syntax for CSS written in a different language. That language is then compiled into normal CSS.
+
+This is the most straightforward explanation of CSS preprocessors:
+
+Syntax (LESS) -> Compiler (JavaScript) -> CSS
+
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Ans. Favorite concept in preprocessing:Escaping
+     The concept that gives the most trouble:Parametric Mixin
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
